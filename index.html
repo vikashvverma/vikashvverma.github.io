@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+<span class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></span>
+<div class="demo-card-wide  mdl-shadow--4dp mdl-cell mdl-cell--8-col">
+  <div class="mdl-card__title" style="background: url('{{post.banner}}') center / cover;">
+    <h2 class="mdl-card__title-text"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <i class="fa fa-calendar post_date"></i> <span class="post_date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <span class="avatar_wrapper"><img src="images/Vikash_Verma.jpg" class="author_avatar" />By {{site.data.author.name}}</span>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">
+      <i class="fa fa-hand-o-right"></i> Read More
+    </a>
+  </div>
+
+</div>
+{% endfor %}
+<!-- <div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div> -->
