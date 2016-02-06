@@ -1,4 +1,4 @@
-a {
+a,a:hover,a:visited {
   text-decoration: none;
 }
 .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
