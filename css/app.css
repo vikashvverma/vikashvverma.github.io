@@ -1,4 +1,4 @@
-a,a:hover,a:visited {
+a, a:hover, a:visited {
   text-decoration: none;
 }
 .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
@@ -29,15 +29,22 @@ a,a:hover,a:visited {
 .avatar_wrapper {
   font-size: 14px;
   color: #08BCF5;
+  margin-left: 20px;
+}
+.mdl-card__supporting-text > p {
+  margin-bottom: 20px;
+  margin: 0 0 10.5px;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 /*post*/
+
 .post-content {
   border-radius: 2px;
   padding: 10px 56px;
   margin-bottom: 80px;
 }
-
 .post-layout.is-small-screen .post-content {
   padding: 40px 28px;
 }
@@ -47,14 +54,15 @@ a,a:hover,a:visited {
 .post-footer {
   padding-left: 40px;
 }
-
 .post-footer .mdl-mini-footer--link-list a {
   font-size: 13px;
 }
+
 /*footer*/
-.site-footer{
+
+.site-footer {
   margin-bottom: -30px;
   margin-top: -30px;
   text-align: center;
-  padding-top:  -60px !important;
+  padding-top: -60px !important;
 }

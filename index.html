@@ -8,11 +8,12 @@ layout: default
     <h2 class="mdl-card__title-text"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   </div>
   <div class="mdl-card__supporting-text">
-    <i class="fa fa-calendar post_date"></i> <span class="post_date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+    <i class="fa fa-calendar fa-2x post_date"></i> <span class="post_date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="avatar_wrapper"><img src="images/Vikash_Verma.jpg" class="author_avatar" />By {{site.data.author.name}}</span>
+    <br/>
+    <p>{% if post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 400 }}{% else %}{{ site.description }}{% endif %}</p>
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <span class="avatar_wrapper"><img src="images/Vikash_Verma.jpg" class="author_avatar" />By {{site.data.author.name}}</span>
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">
       <i class="fa fa-hand-o-right"></i> Read More
     </a>
