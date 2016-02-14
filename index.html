@@ -9,7 +9,7 @@ layout: default
   </div>
   <div class="mdl-card__supporting-text">
     <i class="fa fa-calendar fa-2x post_date"></i> <span class="post_date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <span class="avatar_wrapper"><img src="images/Vikash_Verma.jpg" class="author_avatar" />By {{site.data.author.name}}</span>
+    <span class="avatar_wrapper"><img src="/images/Vikash_Verma.jpg" class="author_avatar" />By {{site.data.author.name}}</span>
     <br/>
     <p>{% if post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 400 }}{% else %}{{ site.description }}{% endif %}</p>
   </div>

@@ -10,8 +10,8 @@ layout: default
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
       <header class="post-header">
-        <h3 class="post-title" itemprop="name headline">{{ page.title }}</h3>
-        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="fa fa-calendar fa-2x post_date"></i> <span class="post_date">{{ page.date | date: "%b %-d, %Y" }}</span></time> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><span class="avatar_wrapper"><img src="/images/Vikash_Verma.jpg" class="author_avatar" />By {{site.data.author.name}}</span></span></span></p>
       </header>
 
       <div class="post-content" itemprop="articleBody">
@@ -19,6 +19,6 @@ layout: default
       </div>
 
     </article>
-
+{% include post-footer.html %}
   </div>
 </div>
