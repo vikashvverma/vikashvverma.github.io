@@ -28,8 +28,6 @@ facebook_username: vikashvverma
 
 # Build settings
 markdown: kramdown
-<<<<<<< HEAD
-=======
 theme: minima
 gems:
   - jekyll-feed
